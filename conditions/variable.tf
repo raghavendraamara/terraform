@@ -3,9 +3,14 @@ variable "ami_id" {
   default     = "ami-09c813fb71547fc4f"
   description = "this is rhel - 9 ami id"
 }
+ 
 variable "instance_type" {
   type    = string
-#   default = "t3.micro"
+   default = "t3.micro"
+} 
+variable "enviornment" {
+  default = "prod"
+  
 }
 variable "ec2_tags" {
   type = map(any)
